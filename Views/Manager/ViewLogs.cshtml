@@ -1,0 +1,79 @@
+﻿@{
+	ViewData["Title"] = "Logify | View Logs";
+}
+
+<div class="container d-flex flex-column justify-content-center">
+	<div class="h2 fw-semibold text-center mb-4">Logify</div>
+	<div class="container">
+		<div class="col-12 col-lg-10 mx-auto">
+			<div class="card shadow-lg rounded-4 p-4">
+				<div class="mb-4 text-center">
+					<h1 class="h4 fw-semibold mb-1">View Time Logs</h1>
+					<p class="text-secondary mb-0">
+						Welcome <span id="user-name"></span>
+						<span class="mx-1">&bull;</span>
+						<span id="co-name"></span>
+						<span class="mx-1">&bull;</span>
+						<span id="pay-period"></span>
+					</p>
+				</div>
+				<div class="table-responsive">
+					<table class="table table-hover table-bordered align-middle">
+						<thead class="table-light">
+							<tr>
+								<th>Date (Mon–Sun)</th>
+								<th>Employee ID</th>
+								<th>Clock In</th>
+								<th>Break</th>
+								<th>Clock Out</th>
+								<th>Total Hours</th>
+								<th>Notes</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Mon 01/12/2026</td>
+								<td>B123</td>
+								<td>08:00</td>
+								<td>01:00</td>
+								<td>17:00</td>
+								<td>08:00</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Tue 01/13/2026</td>
+								<td>B123</td>
+								<td>08:00</td>
+								<td>01:00</td>
+								<td>17:00</td>
+								<td>08:00</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Wed 01/14/2026</td>
+								<td>B123</td>
+								<td>08:00</td>
+								<td>01:00</td>
+								<td>17:00</td>
+								<td>08:00</td>
+								<td></td>
+							</tr>
+						</tbody>
+						<tfoot class="table-light fw-semibold">
+							<tr>
+								<td colspan="6" class="text-end">Total Hours This Week</td>
+								<td>24</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+				<div class="text-center mt-3">
+					<nav class="d-flex justify-content-center gap-3">
+						<a asp-controller="Company" asp-action="Portal" class="nav-link p-0 link-primary text-decoration-underline">Company Portal</a>
+						<a asp-controller="Manager" asp-action="Dashboard" class="nav-link p-0 link-primary text-decoration-underline">Managers Dashboard</a>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,55 @@
+﻿@{
+	ViewData["Title"] = "Logify | Managers Portal";
+}
+
+<div class="container d-flex flex-column justify-content-center">
+	<div class="container">
+		<div class="col-12 col-sm-10 col-md-6 col-lg-4 mx-auto">
+			<div class="container py-3 text-center">
+				<h2 class="fw-bold">
+					Managers Portal
+				</h2>
+				<p class="text-muted">
+					Welcome to the managers dashboard.
+				</p>
+			</div>
+			<div class="h2 fw-semibold text-center mb-4">Logify</div>
+			<div class="card shadow-lg rounded-4 p-4">
+				<div class="mb-4 text-center">
+					<h1 class="h4 mb-0">Managers Portal</h1>
+					<p id="co-name" class="text-secondary small mb-0"></p>
+				</div>
+				<form asp-action="Portal" method="post">
+					<div class="mb-3">
+						<label class="form-label" for="username">Username:</label>
+						<input class="form-control"
+							   id="username"
+							   name="username"
+							   type="text"
+							   placeholder="Enter username..."
+							   required>
+					</div>
+					<div class="mb-3">
+						<label class="form-label" for="password">Password:</label>
+						<input class="form-control"
+							   id="password"
+							   name="password"
+							   type="password"
+							   placeholder="Enter password..."
+							   required>
+					</div>
+					<div class="w-100 d-block">
+						<button type="submit" class="btn btn-danger w-100">Sign In</button>
+					</div>
+				</form>
+				<hr class="my-3">
+				<div class="text-center">
+					<nav class="d-flex justify-content-center gap-3">
+						<a asp-controller="Company" asp-action="Portal" class="nav-link p-0 link-primary text-decoration-underline">Company Portal</a>
+						<a asp-controller="Employee" asp-action="Portal" class="nav-link p-0 link-primary text-decoration-underline">Employee Portal</a>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

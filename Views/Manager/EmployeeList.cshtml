@@ -1,0 +1,95 @@
+﻿@{
+	ViewData["Title"] = "Logify | Employee list";
+}
+
+<div class="container d-flex flex-column justify-content-center">
+	<div class="h2 fw-semibold text-center mb-4">Logify</div>
+	<div class="container">
+		<div class="col-12 col-lg-10 mx-auto">
+			<div class="card shadow-lg rounded-4 p-4">
+				<div class="mb-4 text-center">
+					<h1 class="h4 fw-semibold mb-1">Employee List</h1>
+					<p class="text-secondary mb-0">
+						Welcome <span id="user-name"></span>
+						<span class="mx-1">&bull;</span>
+						<span id="co-name"></span>
+					</p>
+				</div>
+				<div class="table-responsive">
+					<table class="table table-hover align-middle">
+						<thead class="table-light">
+							<tr>
+								<th>Employee ID</th>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Role</th>
+								<th class="text-center">Status</th>
+								<th class="text-center">Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>A123</td>
+								<td>Raymond</td>
+								<td>Manager</td>
+								<td class="text-center">Active</td>
+								<td class="text-center">
+									<div class="d-inline-flex flex-nowrap gap-2">
+										<button class="btn btn-sm btn-outline-success">Enable</button>
+										<button class="btn btn-sm btn-outline-danger">Disable</button>
+										<button class="btn btn-sm btn-outline-primary">Edit</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>B123</td>
+								<td>Kratos</td>
+								<td>Sales</td>
+								<td class="text-center">Active</td>
+								<td class="text-center">
+									<div class="d-inline-flex flex-nowrap gap-2">
+										<button class="btn btn-sm btn-outline-success">Enable</button>
+										<button class="btn btn-sm btn-outline-danger">Disable</button>
+										<button class="btn btn-sm btn-outline-primary">Edit</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>C123</td>
+								<td>Greg</td>
+								<td>Sales</td>
+								<td class="text-center">FMLA</td>
+								<td class="text-center">
+									<div class="d-inline-flex flex-nowrap gap-2">
+										<button class="btn btn-sm btn-outline-success">Enable</button>
+										<button class="btn btn-sm btn-outline-danger">Disable</button>
+										<button class="btn btn-sm btn-outline-primary">Edit</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>D123</td>
+								<td>Cain</td>
+								<td>Janitor</td>
+								<td class="text-center">Disabled</td>
+								<td class="text-center">
+									<div class="d-inline-flex flex-nowrap gap-2">
+										<button class="btn btn-sm btn-outline-success">Enable</button>
+										<button class="btn btn-sm btn-outline-danger">Disable</button>
+										<button class="btn btn-sm btn-outline-primary">Edit</button>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="text-center mt-3">
+					<nav class="d-flex justify-content-center gap-3">
+						<a asp-controller="Manager" asp-action="Portal" class="nav-link p-0 link-primary text-decoration-underline">Managers Portal</a>
+						<a asp-controller="Manager" asp-action="Dashboard" class="nav-link p-0 link-primary text-decoration-underline">Managers Dashboard</a>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
